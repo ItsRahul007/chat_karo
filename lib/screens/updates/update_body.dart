@@ -33,7 +33,7 @@ class UpdateBody extends StatelessWidget {
                 alignment: Alignment.bottomRight,
                 children: [
                   CircleAvatar(
-                    radius: 28,
+                    radius: 26,
                     backgroundColor: Colors.blueGrey.shade700,
                     child: Text(
                       "R",
@@ -87,7 +87,7 @@ class StatusCard extends StatelessWidget {
 
     return CustomListTile(
       leading: CircleAvatar(
-        radius: 28,
+        radius: 26,
         backgroundColor: Colors.blueGrey.shade700,
         child: Text(
           firstLetter,

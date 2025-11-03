@@ -25,9 +25,12 @@ class _HomeState extends State<Home> {
       floatingBar: true,
       floatingIcon: Icons.add,
       onFloatingButtonPressed: () {},
-      child: ListView.builder(
-        itemBuilder: (context, index) => CommonChatCard(),
-        itemCount: 10,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 4),
+        child: ListView.builder(
+          itemBuilder: (context, index) => CommonChatCard(),
+          itemCount: 10,
+        ),
       ),
     );
   }

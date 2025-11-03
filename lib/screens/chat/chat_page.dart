@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 final List<Message> message = [
   Message(message: "Hi", isMe: true, time: "10.20"),
+  Message(message: "the first message", isMe: true, time: "10.20"),
   Message(message: "Hello", isMe: false, time: "10.20"),
   Message(message: "How are you?", isMe: true, time: "10.20"),
   Message(message: "I am fine", isMe: false, time: "10.20"),
@@ -19,6 +20,113 @@ final List<Message> message = [
     isMe: true,
     time: "10.20",
   ),
+  Message(message: "Hi", isMe: true, time: "10.20"),
+  Message(message: "Hello", isMe: false, time: "10.20"),
+  Message(message: "How are you?", isMe: true, time: "10.20"),
+  Message(message: "I am fine", isMe: false, time: "10.20"),
+  Message(message: "What about you?", isMe: true, time: "10.20"),
+  Message(message: "I am good", isMe: false, time: "10.20"),
+  Message(message: "Thank you", isMe: true, time: "10.20"),
+  Message(message: "You are welcome", isMe: false, time: "10.20"),
+  Message(message: "Bye", isMe: true, time: "10.20"),
+  Message(message: "See you later", isMe: false, time: "10.20"),
+  Message(
+    message:
+        "Bye ashgf dfsh oihasid cashc oais sahncs sd hsch shdois cashcsa ch ciosa cs ",
+    isMe: true,
+    time: "10.20",
+  ),
+  Message(message: "Hi", isMe: true, time: "10.20"),
+  Message(message: "Hello", isMe: false, time: "10.20"),
+  Message(message: "How are you?", isMe: true, time: "10.20"),
+  Message(message: "I am fine", isMe: false, time: "10.20"),
+  Message(message: "What about you?", isMe: true, time: "10.20"),
+  Message(message: "I am good", isMe: false, time: "10.20"),
+  Message(message: "Thank you", isMe: true, time: "10.20"),
+  Message(message: "You are welcome", isMe: false, time: "10.20"),
+  Message(message: "Bye", isMe: true, time: "10.20"),
+  Message(message: "See you later", isMe: false, time: "10.20"),
+  Message(
+    message:
+        "Bye ashgf dfsh oihasid cashc oais sahncs sd hsch shdois cashcsa ch ciosa cs ",
+    isMe: true,
+    time: "10.20",
+  ),
+  Message(message: "Hi", isMe: true, time: "10.20"),
+  Message(message: "Hello", isMe: false, time: "10.20"),
+  Message(message: "How are you?", isMe: true, time: "10.20"),
+  Message(message: "I am fine", isMe: false, time: "10.20"),
+  Message(message: "What about you?", isMe: true, time: "10.20"),
+  Message(message: "I am good", isMe: false, time: "10.20"),
+  Message(message: "Thank you", isMe: true, time: "10.20"),
+  Message(message: "You are welcome", isMe: false, time: "10.20"),
+  Message(message: "Bye", isMe: true, time: "10.20"),
+  Message(message: "See you later", isMe: false, time: "10.20"),
+  Message(
+    message:
+        "Bye ashgf dfsh oihasid cashc oais sahncs sd hsch shdois cashcsa ch ciosa cs ",
+    isMe: true,
+    time: "10.20",
+  ),
+  Message(message: "Hi", isMe: true, time: "10.20"),
+  Message(message: "Hello", isMe: false, time: "10.20"),
+  Message(message: "How are you?", isMe: true, time: "10.20"),
+  Message(message: "I am fine", isMe: false, time: "10.20"),
+  Message(message: "What about you?", isMe: true, time: "10.20"),
+  Message(message: "I am good", isMe: false, time: "10.20"),
+  Message(message: "Thank you", isMe: true, time: "10.20"),
+  Message(message: "You are welcome", isMe: false, time: "10.20"),
+  Message(message: "Bye", isMe: true, time: "10.20"),
+  Message(message: "See you later", isMe: false, time: "10.20"),
+  Message(
+    message:
+        "Bye ashgf dfsh oihasid cashc oais sahncs sd hsch shdois cashcsa ch ciosa cs ",
+    isMe: true,
+    time: "10.20",
+  ),
+  Message(message: "Hi", isMe: true, time: "10.20"),
+  Message(message: "Hello", isMe: false, time: "10.20"),
+  Message(message: "How are you?", isMe: true, time: "10.20"),
+  Message(message: "I am fine", isMe: false, time: "10.20"),
+  Message(message: "What about you?", isMe: true, time: "10.20"),
+  Message(message: "I am good", isMe: false, time: "10.20"),
+  Message(message: "Thank you", isMe: true, time: "10.20"),
+  Message(message: "You are welcome", isMe: false, time: "10.20"),
+  Message(message: "Bye", isMe: true, time: "10.20"),
+  Message(message: "See you later", isMe: false, time: "10.20"),
+  Message(
+    message:
+        "Bye ashgf dfsh oihasid cashc oais sahncs sd hsch shdois cashcsa ch ciosa cs ",
+    isMe: true,
+    time: "10.20",
+  ),
+  Message(message: "Hi", isMe: true, time: "10.20"),
+  Message(message: "Hello", isMe: false, time: "10.20"),
+  Message(message: "How are you?", isMe: true, time: "10.20"),
+  Message(message: "I am fine", isMe: false, time: "10.20"),
+  Message(message: "What about you?", isMe: true, time: "10.20"),
+  Message(message: "I am good", isMe: false, time: "10.20"),
+  Message(message: "Thank you", isMe: true, time: "10.20"),
+  Message(message: "You are welcome", isMe: false, time: "10.20"),
+  Message(message: "Bye", isMe: true, time: "10.20"),
+  Message(message: "See you later", isMe: false, time: "10.20"),
+  Message(
+    message:
+        "Bye ashgf dfsh oihasid cashc oais sahncs sd hsch shdois cashcsa ch ciosa cs ",
+    isMe: true,
+    time: "10.20",
+  ),
+  Message(message: "Hi", isMe: true, time: "10.20"),
+  Message(message: "Hello", isMe: false, time: "10.20"),
+  Message(message: "How are you?", isMe: true, time: "10.20"),
+  Message(message: "I am fine", isMe: false, time: "10.20"),
+  Message(message: "What about you?", isMe: true, time: "10.20"),
+  Message(message: "I am good", isMe: false, time: "10.20"),
+  Message(message: "Thank you", isMe: true, time: "10.20"),
+  Message(message: "You are welcome", isMe: false, time: "10.20"),
+  Message(message: "Bye", isMe: true, time: "10.20"),
+  Message(message: "See you later", isMe: false, time: "10.20"),
+  Message(message: "It is last message", isMe: true, time: "10.20"),
 ];
 
 class ChatPage extends StatefulWidget {
@@ -32,12 +140,25 @@ class ChatPage extends StatefulWidget {
 
 class _ChatPageState extends State<ChatPage> {
   final TextEditingController _controller = TextEditingController();
+  final ScrollController _scrollController = ScrollController();
   bool showAttachFile = true;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((t) {
+      _scrollToTheBottom();
+    });
+  }
 
   @override
   void dispose() {
     _controller.dispose();
     super.dispose();
+  }
+
+  void _scrollToTheBottom() {
+    _scrollController.jumpTo(_scrollController.position.maxScrollExtent);
   }
 
   @override
@@ -110,6 +231,7 @@ class _ChatPageState extends State<ChatPage> {
                         },
                         decoration: InputDecoration(
                           hintText: "Type a message",
+
                           filled: true,
                           fillColor: Theme.of(context).colorScheme.onTertiary,
                           hintStyle: Theme.of(context).textTheme.bodyLarge
@@ -162,6 +284,7 @@ class _ChatPageState extends State<ChatPage> {
         ),
       ),
       body: ListView.builder(
+        controller: _scrollController,
         itemBuilder: (context, index) => CommonMessage(message: message[index]),
         itemCount: message.length,
       ),

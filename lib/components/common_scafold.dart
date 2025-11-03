@@ -54,6 +54,8 @@ class _CommonScafoldState extends State<CommonScafold> {
           children: [
             Expanded(
               child: TextField(
+                autofocus: true,
+                autocorrect: false,
                 controller: widget.searchController,
                 onChanged: (value) {
                   widget.onSearch?.call(value);

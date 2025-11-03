@@ -41,10 +41,13 @@ class CustomListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final textTheme = theme.textTheme;
+    final listTileTheme = ListTileTheme.of(context);
 
     final backgroundColor = selected
-        ? (selectedColor ?? theme.colorScheme.primary.withValues(alpha: 0.12))
-        : tileColor;
+        ? (selectedColor ??
+              listTileTheme.selectedTileColor ??
+              theme.colorScheme.primary.withValues(alpha: 0.12))
+        : (tileColor ?? listTileTheme.tileColor);
 
     Widget? leadingWidget = leading;
     if (leadingWidget != null) {
@@ -57,17 +60,27 @@ class CustomListTile extends StatelessWidget {
       );
     }
 
+    final trailingStyle =
+        listTileTheme.leadingAndTrailingTextStyle ?? textTheme.bodySmall;
+
     Widget? trailingWidget = trailing;
     if (trailingWidget != null) {
       trailingWidget = Padding(
         padding: const EdgeInsets.only(left: 8.0),
-        child: trailingWidget,
+        child: DefaultTextStyle(
+          style: trailingStyle ?? const TextStyle(),
+          child: trailingWidget,
+        ),
       );
     }
 
-    final titleStyle = dense ? textTheme.bodyMedium : textTheme.titleMedium;
+    final titleStyle =
+        listTileTheme.titleTextStyle ??
+        (dense ? textTheme.bodyMedium : textTheme.titleMedium);
 
-    final subtitleStyle = dense ? textTheme.bodySmall : textTheme.bodyMedium;
+    final subtitleStyle =
+        listTileTheme.subtitleTextStyle ??
+        (dense ? textTheme.bodySmall : textTheme.bodyMedium);
 
     Widget titleWidget = DefaultTextStyle(
       style: titleStyle ?? const TextStyle(),
@@ -77,11 +90,7 @@ class CustomListTile extends StatelessWidget {
     Widget? subtitleWidget;
     if (subtitle != null) {
       subtitleWidget = DefaultTextStyle(
-        style:
-            subtitleStyle?.copyWith(
-              color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
-            ) ??
-            const TextStyle(),
+        style: subtitleStyle ?? const TextStyle(),
         child: subtitle!,
       );
     }

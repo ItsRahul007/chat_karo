@@ -31,7 +31,7 @@ class MyTheme {
       minVerticalPadding: 5,
       contentPadding: const EdgeInsets.symmetric(horizontal: 10),
       subtitleTextStyle: TextStyle(
-        color: MyColors.primaryText,
+        color: MyColors.primaryText.withOpacity(0.8),
         fontSize: 15,
         fontWeight: FontWeight.w500,
       ),
@@ -147,12 +147,14 @@ class MyTheme {
     bodyLarge: TextStyle(
       color: MyColors.primaryText,
       fontSize: 18,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.w400,
     ), // Main body text
-    bodyMedium: TextStyle(
-      color: MyColors.secondaryText,
-      fontSize: 16,
-    ), // Secondary text in chat list (last message)
+    bodyMedium: TextStyle(color: MyColors.secondaryText, fontSize: 16),
+    bodySmall: TextStyle(
+      color: MyColors.primaryText,
+      fontWeight: FontWeight.w400,
+      fontSize: 12,
+    ),
     labelLarge: TextStyle(
       color: MyColors.primaryText,
       fontWeight: FontWeight.w600,

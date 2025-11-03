@@ -55,9 +55,15 @@ class _CallCard extends StatelessWidget {
         // Make a audio call
       },
       leading: CircleAvatar(
-        radius: 28,
+        radius: 26,
         backgroundColor: Colors.blueGrey.shade700,
-        child: Text(firstLetter),
+        child: Text(
+          firstLetter,
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(
+            color: Theme.of(context).colorScheme.onPrimary,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
       ),
       title: Text(person.name),
       subtitle: Row(
@@ -70,7 +76,10 @@ class _CallCard extends StatelessWidget {
                 : MyColors.primaryGreen,
           ),
           SizedBox(width: 5),
-          Text(person.time, style: TextStyle(color: MyColors.secondaryText)),
+          Text(
+            person.time,
+            style: TextStyle(color: MyColors.primaryText.withOpacity(0.8)),
+          ),
         ],
       ),
       trailing: IconButton(
