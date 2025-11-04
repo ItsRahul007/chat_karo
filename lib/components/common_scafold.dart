@@ -145,7 +145,7 @@ class _BottomNavigationBarState extends State<_MyBottomNavigationBar> {
           if (!canPop) {
             context.push(bottomNavRoutes[index]);
           } else {
-            context.replace(bottomNavRoutes[index]);
+            context.pushReplacement(bottomNavRoutes[index]);
           }
         }
       },

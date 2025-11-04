@@ -20,6 +20,7 @@ class MyTheme {
       error: MyColors.errorColor,
       onError: MyColors.surfaceWhite,
       onTertiary: Colors.grey.shade100,
+      tertiary: MyColors.inputBgColor,
     ),
 
     textTheme: _lightModeTextTheme,

@@ -6,18 +6,22 @@ import 'package:go_router/go_router.dart';
 class CommonChatCard extends StatelessWidget {
   const CommonChatCard({super.key});
 
+  void _onTap(BuildContext context) {
+    context.push("${MyRoutes.chat}/1");
+  }
+
   @override
   Widget build(BuildContext context) {
     return CustomListTile(
-      onTap: () => context.push("${MyRoutes.chat}/1"),
+      onTap: () => _onTap(context),
       leading: CircleAvatar(
         radius: 26,
         backgroundColor: Colors.blueGrey.shade700,
-        child: Text("JD"),
+        child: const Text("JD"),
       ),
       title: const Text('John Doe'),
-      subtitle: Text("Hey, What's up?"),
-      trailing: Text("10:30 AM"),
+      subtitle: const Text("Hey, What's up?"),
+      trailing: const Text("10:30 AM"),
     );
   }
 }

@@ -12,11 +12,11 @@ class MyColors {
   ); // Very light background green for chat bubbles
   static const Color primaryText = Color(0xFF202020);
   static const Color secondaryText = Color(0xFF8A8A8A);
-  static const Color lightBackground = Color.fromARGB(
-    255,
+  static const Color lightBackground = Color.fromRGBO(
     241,
     240,
     234,
+    1,
   ); // Main background
   static const Color surfaceWhite = Color.fromARGB(
     193,
@@ -24,6 +24,8 @@ class MyColors {
     234,
     142,
   ); // Card/Sheet background
+
+  static const inputBgColor = Color.fromRGBO(250, 251, 248, 1);
 
   // Error color
   static const Color errorColor = Color(0xFFB00020);

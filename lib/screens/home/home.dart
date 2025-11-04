@@ -1,5 +1,5 @@
-import 'package:chat_karo/components/common_chat_card.dart';
 import 'package:chat_karo/components/common_scafold.dart';
+import 'package:chat_karo/screens/home/home_body.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -17,7 +17,6 @@ class _HomeState extends State<Home> {
     return CommonScafold(
       title: 'Chat Karo',
       appBar: true,
-      search: true,
       bottomNavIndex: 0,
       actions: [
         IconButton(onPressed: () {}, icon: const Icon(Icons.settings_outlined)),
@@ -25,13 +24,7 @@ class _HomeState extends State<Home> {
       floatingBar: true,
       floatingIcon: Icons.add,
       onFloatingButtonPressed: () {},
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 4),
-        child: ListView.builder(
-          itemBuilder: (context, index) => CommonChatCard(),
-          itemCount: 10,
-        ),
-      ),
+      child: HomeBody(),
     );
   }
 }
