@@ -1,5 +1,4 @@
 import 'package:chat_karo/components/custom_list_tile.dart';
-import 'package:chat_karo/util/theme/colors.dart';
 import 'package:chat_karo/util/types/call.types.dart';
 import 'package:flutter/material.dart';
 
@@ -48,6 +47,7 @@ class _CallCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final String firstLetter = person.name[0].toUpperCase();
+    final theme = Theme.of(context);
 
     return CustomListTile(
       contentPadding: EdgeInsetsGeometry.symmetric(horizontal: 8, vertical: 4),
@@ -59,8 +59,8 @@ class _CallCard extends StatelessWidget {
         backgroundColor: Colors.blueGrey.shade700,
         child: Text(
           firstLetter,
-          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-            color: Theme.of(context).colorScheme.onPrimary,
+          style: theme.textTheme.titleLarge?.copyWith(
+            color: theme.colorScheme.onPrimary,
             fontWeight: FontWeight.w500,
           ),
         ),
@@ -72,13 +72,15 @@ class _CallCard extends StatelessWidget {
             person.isOutgoing ? Icons.call_made : Icons.call_received,
             size: 20,
             color: person.isCallMissed && !person.isOutgoing
-                ? MyColors.errorColor
-                : MyColors.primaryGreen,
+                ? theme.colorScheme.error
+                : theme.colorScheme.primary,
           ),
           SizedBox(width: 5),
           Text(
             person.time,
-            style: TextStyle(color: MyColors.primaryText.withOpacity(0.8)),
+            style: TextStyle(
+              color: theme.colorScheme.onSurface.withOpacity(0.8),
+            ),
           ),
         ],
       ),
@@ -92,7 +94,7 @@ class _CallCard extends StatelessWidget {
         },
         icon: Icon(
           person.isAudioCall ? Icons.call_outlined : Icons.videocam_outlined,
-          color: MyColors.primaryText,
+          color: theme.colorScheme.onSurface,
         ),
       ),
     );

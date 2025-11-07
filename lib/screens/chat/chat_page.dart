@@ -1,4 +1,3 @@
-import 'package:chat_karo/util/theme/colors.dart';
 import 'package:chat_karo/util/types/common.types.dart';
 import 'package:flutter/material.dart';
 
@@ -208,7 +207,7 @@ class _ChatPageState extends State<ChatPage> {
       ),
       bottomNavigationBar: Container(
         padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-        height: 100,
+        height: 90,
         child: Row(
           children: [
             Expanded(
@@ -275,7 +274,7 @@ class _ChatPageState extends State<ChatPage> {
                 height: 50,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  color: MyColors.primaryGreen,
+                  color: Theme.of(context).primaryColor,
                 ),
                 child: const Icon(Icons.send, color: Colors.black),
               ),
@@ -323,20 +322,17 @@ class CommonMessage extends StatelessWidget {
                 Flexible(
                   child: Text(
                     message.message,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: MyColors.primaryText,
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       fontWeight: FontWeight.w400,
-                      fontSize: 16,
                     ),
                   ),
                 ),
                 const SizedBox(width: 14),
                 Text(
                   message.time,
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    fontWeight: FontWeight.w300,
-                    fontSize: 12,
-                  ),
+                  style: Theme.of(
+                    context,
+                  ).textTheme.bodySmall?.copyWith(fontWeight: FontWeight.w300),
                 ),
               ],
             ),

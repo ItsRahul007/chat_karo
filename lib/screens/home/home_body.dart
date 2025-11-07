@@ -25,7 +25,7 @@ class HomeBody extends StatelessWidget {
                     context,
                   ).textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.w400),
                   focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
+                    borderRadius: BorderRadius.circular(5),
                     borderSide: BorderSide.none,
                   ),
                 ),
